@@ -11,7 +11,7 @@ import { AppModule } from './app.module'
 // start()
 
 const start = async () => {
-  const PORT = 5000;
+  const PORT = process.env.PORT || 5000;
   const app = await NestFactory.create(AppModule)
 
   await app.listen(PORT, () => console.log(`start ${PORT}`))
