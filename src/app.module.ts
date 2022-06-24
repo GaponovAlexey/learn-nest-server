@@ -6,5 +6,17 @@ import { AppService } from './app.service'
 @Module({
   controllers: [AppController],
   providers: [AppService],
+  imports: [
+    SequelizeModule.forRoot({
+      dialect: 'postgres',
+      host: 'localhost',
+      port: 5432,
+      username: 'postgres',
+      password: 'postal',
+      database: 'nest-db',
+      models: [],
+      autoLoadModels: true
+    }),
+  ],
 })
 export class AppModule {}
