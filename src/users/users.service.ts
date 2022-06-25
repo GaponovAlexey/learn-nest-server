@@ -6,7 +6,7 @@ export class UsersService {
     const user = [
       { id: 1, title: 'hi nestjs' },
       { id: 2, title: 'hi nextjs' },
-      { id: 3, title: 'hi test' },
+      { id: 3, title: 'hi test2' },
     ]
     return user
   }
