@@ -10,7 +10,7 @@ export class ProductsController {
 
   @Get(':id')
   getOne(@Param('id') id) {
-    return 'getOne' + id.id
+    return 'getOne:=' + id
   }
 
   @Post()
